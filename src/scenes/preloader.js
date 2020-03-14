@@ -1,6 +1,6 @@
 import backgroundpng1 from '../../assets/images/shadow-of-the-beast2-karamoon.png';
 
-export default class Preloader extends Phaser.Scene {
+export class Preloader extends Phaser.Scene {
 	constructor() {
 		super('preloader');
 	}
