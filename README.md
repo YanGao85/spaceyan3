@@ -1,4 +1,6 @@
 
+
+
      ______     ______     ______     _____     __    __     _______
     /\  == \   /\  ___\   /\  __ \   /\  __-.  /\ "-./  \   /\  ____\
     \ \  __<   \ \  __\_  \ \  __ \  \ \ \/\ \ \ \ \-./\ \  \ \  __\__
@@ -634,7 +636,7 @@ lists
 
 not all languages have all of these but understanding the basics on a fundamental level will help you pass on that knowledge to other languages that also use the same methodology but in a diferent language for instance
 
-if you learn python to an intermediate level you could quite easily pass on much of that knowledge into learning javascript, C++ or Java,  
+if you learn python to an intermediate level you could quite easily pass on much of that knowledge into learning javascript, C++ or Java,
 
 each of those languages perform in different ways and are structured intirely different but the fundamental knowledge can still be used and passed on.
 another example is, python, c++, and Java have networking abilities. if you understand fundamentally how tcp and udp work and how to initiate them all you need to do is learn how each language uniquely deals with each task.
@@ -1169,4 +1171,4 @@ remove our devserver change our mode to production and for now that should do it
 
 also remove watch true
 
- 
+
