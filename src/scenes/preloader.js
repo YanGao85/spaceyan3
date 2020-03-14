@@ -1,29 +1,37 @@
-import backgroundpng1 from '../../assets/images/shadow-of-the-beast2-karamoon.png';
-
+import background from '../../assets/backgrounds/nebula1';
+import enemy1 from '../../assets/sprites/Enemy1.png';
+import enemy2 from '../../assets/sprites/Enemy2.png';
+import enemy3 from '../../assets/sprites/Enemy3.png';
+import enemy4 from '../../assets/sprites/Enemy4.png';
+import hero from '../../assets/sprites/HeroShip';
+import beam from '../../assets/sprites/Beam.png';
+import explosion from '../../assets/sprites/explosion.png';
+import font from '../../assets/fonts/font.png';
+import fontxml from '../../assets/fonts/font.xml';
 export class Preloader extends Phaser.Scene {
 	constructor() {
 		super('preloader');
 	}
 	preload() {
-		this.load.image('background', '../../assets/backgrounds/nebula1.png');
-		this.load.image('hero', '../../assets/sprites/HeroShip.png');
-		this.load.spritesheet('beam', '../../assets/sprites/Beam.png', {
+		this.load.image('background', background);
+		this.load.image('hero', hero);
+		this.load.spritesheet('beam', beam, {
 			frameWidth: 40,
 			frameHeight: 60
 		});
-		this.load.image('enemy1', '../../assets/sprites/Enemy1.png');
-		this.load.image('enemy2', '../../assets/sprites/Enemy2.png');
-		this.load.image('enemy3', '../../assets/sprites/Enemy3.png');
-		this.load.image('enemy4', '../../assets/sprites/Enemy4.png');
-		this.load.spritesheet('explosion', '../../assets/sprites/explosion.png', {
+		this.load.image('enemy1', enemy1);
+		this.load.image('enemy2', enemy2);
+		this.load.image('enemy3', enemy3);
+		this.load.image('enemy4', enemy4);
+		this.load.spritesheet('explosion', explosion, {
 			frameWidth: 16,
 			frameHeight: 16
 		});
-		this.load.bitmapFont('pixelFont', '../../assets/fonts/font.png', '../../assets/fonts/font.xml');
-		this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
-		this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
+		this.load.bitmapFont('pixelFont', font, fontxml);
+		// this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
+		// this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
 
-		this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
+		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
 		// console.log("Preloader preload")
 		// let ready = false;
 		// let progressBar = this.add.graphics();

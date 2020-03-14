@@ -56,7 +56,7 @@ export class MainMenu extends Phaser.Scene {
 		this.physics.add.overlap(this.hero, this.enemies, this.hurtHero, null, this);
 
 		this.physics.add.overlap(this.projectiles, this.enemies, this.hitEnemy, null, this);
-		this.music = this.sound.add('music');
+		// this.music = this.sound.add('music');
 		const musicConfig = {
 			mute: false,
 			volume: 1,
@@ -66,7 +66,7 @@ export class MainMenu extends Phaser.Scene {
 			loop: false,
 			delay: 0
 		};
-		this.music.play(musicConfig);
+		// this.music.play(musicConfig);
 
 		this.score = 0;
 		this.scoreLabel = this.add.bitmapText(15, 10, 'pixelFont', 'SCORE', 48);
@@ -76,8 +76,8 @@ export class MainMenu extends Phaser.Scene {
 		this.enemy3.setInteractive();
 		this.enemy4.setInteractive();
 
-		this.beamSound = this.sound.add('audio_beam');
-		this.explosionSound = this.sound.add('audio_explosion');
+		// this.beamSound = this.sound.add('audio_beam');
+		// this.explosionSound = this.sound.add('audio_explosion');
 	}
 
 	moveHeroManager() {
@@ -92,7 +92,7 @@ export class MainMenu extends Phaser.Scene {
 
 	shootBeam() {
 		const beam = new Beam(this);
-		this.beamSound.play();
+		// this.beamSound.play();
 	}
 
 	moveEnemy(enemy, speed) {
@@ -120,7 +120,7 @@ export class MainMenu extends Phaser.Scene {
 			callbackScope: this,
 			loop: false
 		});
-		this.explosionSound.play();
+		// this.explosionSound.play();
 	}
 
 	resetHero() {
@@ -149,7 +149,7 @@ export class MainMenu extends Phaser.Scene {
 		this.score += 10 * enemy.name;
 		const formatedScore = this.zeroPad(this.score, 6);
 		this.scoreLabel.text = `SCORE ${formatedScore}`;
-		this.explosionSound.play();
+		// this.explosionSound.play();
 	}
 
 	update() {
