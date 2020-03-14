@@ -5,13 +5,9 @@ export class Boot extends Phaser.Scene {
 		super('boot');
 	}
 	preload() {
-		//console.log('Boot Preload')
 		this.load.image('logo', logo);
 	}
 	create() {
-		// this.scene.start('preloader')
-		setTimeout(() => {
-			this.scene.start('preloader');
-		}, 1000);
+		this.scene.start('preloader');
 	}
 }
