@@ -148,7 +148,7 @@ export class MainMenu extends Phaser.Scene {
 		this.resetEnemyPosition(enemy);
 		this.score += 10 * enemy.name;
 		const formatedScore = this.zeroPad(this.score, 6);
-		this.scoreLabel.text = `SCORE ${formatedScore}`;
+		this.scoreLabel = `SCORE ${formatedScore}`;
 		// this.explosionSound.play();
 	}
 
