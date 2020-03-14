@@ -70,6 +70,7 @@ export class MainMenu extends Phaser.Scene {
 
 		this.score = 0;
 		this.scoreLabel = this.add.text(15, 10, 'SCORE', 48);
+		console.log(this.scoreLabel);
 
 		this.enemy1.setInteractive();
 		this.enemy2.setInteractive();
