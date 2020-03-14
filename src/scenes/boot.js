@@ -7,8 +7,8 @@ import enemy4 from '../../assets/images/Enemy4.png';
 import hero from '../../assets/images/HeroShip';
 import beam from '../../assets/images/Beam.png';
 import explosion from '../../assets/images/explosion.png';
-import font from '../../assets/fonts/font.png';
-import fontxml from '../../assets/fonts/font.xml';
+// import font from '../../assets/fonts/font.png';
+// import fontxml from '../../assets/fonts/font.xml';
 export class Boot extends Phaser.Scene {
 	constructor() {
 		super('boot');
@@ -29,7 +29,7 @@ export class Boot extends Phaser.Scene {
 			frameWidth: 16,
 			frameHeight: 16
 		});
-		this.load.bitmapFont('pixelFont', font, fontxml);
+		// this.load.bitmapFont('pixelFont', font, fontxml);
 	}
 	create() {
 		this.anims.create({

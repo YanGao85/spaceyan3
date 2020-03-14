@@ -68,8 +68,8 @@ export class MainMenu extends Phaser.Scene {
 		};
 		// this.music.play(musicConfig);
 
-		this.score = 0;
-		this.scoreLabel = this.add.bitmapText(15, 10, 'pixelFont', 'SCORE', 48);
+		// this.score = 0;
+		// this.scoreLabel = this.add.bitmapText(15, 10, 'pixelFont', 'SCORE', 48);
 
 		this.enemy1.setInteractive();
 		this.enemy2.setInteractive();
@@ -146,9 +146,9 @@ export class MainMenu extends Phaser.Scene {
 		const explosion = new Explosion(this, enemy.x, enemy.y);
 		projectile.destroy();
 		this.resetEnemyPosition(enemy);
-		this.score += 10 * enemy.name;
-		const formatedScore = this.zeroPad(this.score, 6);
-		this.scoreLabel.text = `SCORE ${formatedScore}`;
+		// this.score += 10 * enemy.name;
+		// const formatedScore = this.zeroPad(this.score, 6);
+		// this.scoreLabel.text = `SCORE ${formatedScore}`;
 		// this.explosionSound.play();
 	}
 
@@ -163,11 +163,11 @@ export class MainMenu extends Phaser.Scene {
 		}
 	}
 
-	zeroPad(number, size) {
-		let stringNumber = String(number);
-		while (stringNumber.length < (size || 2)) {
-			stringNumber = '0' + stringNumber;
-		}
-		return stringNumber;
-	}
+	// zeroPad(number, size) {
+	// 	let stringNumber = String(number);
+	// 	while (stringNumber.length < (size || 2)) {
+	// 		stringNumber = '0' + stringNumber;
+	// 	}
+	// 	return stringNumber;
+	// }
 }
