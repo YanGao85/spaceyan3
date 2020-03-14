@@ -69,7 +69,7 @@ export class MainMenu extends Phaser.Scene {
 		// this.music.play(musicConfig);
 
 		this.score = 0;
-		this.scoreLabel = this.add.text(15, 10, 'pixelFont', 'SCORE', 48);
+		this.scoreLabel = this.add.text(15, 10, 'SCORE', 48);
 
 		this.enemy1.setInteractive();
 		this.enemy2.setInteractive();
