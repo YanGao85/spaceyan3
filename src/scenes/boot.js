@@ -1,10 +1,10 @@
 import logo from '../../assets/images/logo.png';
-import background from '../../assets/backgrounds/nebula1';
+import background from '../../assets/images/nebula1.png';
 import enemy1 from '../../assets/images/Enemy1.png';
 import enemy2 from '../../assets/images/Enemy2.png';
 import enemy3 from '../../assets/images/Enemy3.png';
 import enemy4 from '../../assets/images/Enemy4.png';
-import hero from '../../assets/images/HeroShip';
+import hero from '../../assets/images/HeroShip.png';
 import beam from '../../assets/images/Beam.png';
 import explosion from '../../assets/images/explosion.png';
 // import font from '../../assets/fonts/font.png';
