@@ -1,36 +1,10 @@
-import background from '../../assets/backgrounds/nebula1';
-import enemy1 from '../../assets/sprites/Enemy1.png';
-import enemy2 from '../../assets/sprites/Enemy2.png';
-import enemy3 from '../../assets/sprites/Enemy3.png';
-import enemy4 from '../../assets/sprites/Enemy4.png';
-import hero from '../../assets/sprites/HeroShip';
-import beam from '../../assets/sprites/Beam.png';
-import explosion from '../../assets/sprites/explosion.png';
-import font from '../../assets/fonts/font.png';
-import fontxml from '../../assets/fonts/font.xml';
 export class Preloader extends Phaser.Scene {
 	constructor() {
 		super('preloader');
 	}
 	preload() {
-		this.load.image('background', background);
-		this.load.image('hero', hero);
-		this.load.spritesheet('beam', beam, {
-			frameWidth: 40,
-			frameHeight: 60
-		});
-		this.load.image('enemy1', enemy1);
-		this.load.image('enemy2', enemy2);
-		this.load.image('enemy3', enemy3);
-		this.load.image('enemy4', enemy4);
-		this.load.spritesheet('explosion', explosion, {
-			frameWidth: 16,
-			frameHeight: 16
-		});
-		this.load.bitmapFont('pixelFont', font, fontxml);
 		// this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
 		// this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
-
 		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
 		// console.log("Preloader preload")
 		// let ready = false;
@@ -38,7 +12,6 @@ export class Preloader extends Phaser.Scene {
 		// let progressBox = this.add.graphics();
 		// progressBox.fillStyle(0x222222, 0.8);
 		// progressBox.fillRect(240, 270, 320, 50);
-
 		// var width = this.cameras.main.width;
 		// var height = this.cameras.main.height;
 		// var loadingText = this.make.text({
@@ -51,7 +24,6 @@ export class Preloader extends Phaser.Scene {
 		// 	}
 		// });
 		// loadingText.setOrigin(0.5, 0.5);
-
 		// var percentText = this.make.text({
 		// 	x: width / 2,
 		// 	y: height / 2 - 5,
@@ -62,7 +34,6 @@ export class Preloader extends Phaser.Scene {
 		// 	}
 		// });
 		// percentText.setOrigin(0.5, 0.5);
-
 		// var assetText = this.make.text({
 		// 	x: width / 2,
 		// 	y: height / 2 + 50,
@@ -73,7 +44,6 @@ export class Preloader extends Phaser.Scene {
 		// 	}
 		// });
 		// assetText.setOrigin(0.5, 0.5);
-
 		// this.load.on('progress', function(value) {
 		// 	console.log(value);
 		// 	percentText.setText(parseInt(value * 100) + '%');
@@ -96,10 +66,8 @@ export class Preloader extends Phaser.Scene {
 		// 	console.log('on Complete should be one time');
 		// 	console.log(ready);
 		// });
-
 		// //-------------mainMenu-------------//
 		// this.load.image('BkGrnd', backgroundpng1);
-
 		// //-------------Lvl_1-------------//
 	}
 	create() {
@@ -107,19 +75,7 @@ export class Preloader extends Phaser.Scene {
 		// setTimeout(() => {
 		// 	this.scene.start('playGame');
 		// }, 1000);
-		this.anims.create({
-			key: 'beam_anim',
-			frames: this.anims.generateFrameNumbers('beam'),
-			frameRate: 5,
-			repeat: -1
-		});
-		this.anims.create({
-			key: 'explode',
-			frames: this.anims.generateFrameNumbers('explosion'),
-			frameRate: 10,
-			repeat: 0,
-			hideOnComplete: true
-		});
+
 		this.scene.start('mainMenu');
 	}
 }

@@ -1,4 +1,4 @@
-import '../assets/styles/home.css';
+// import '../assets/styles/home.css';
 import 'phaser';
 
 import Phaser from 'phaser';
