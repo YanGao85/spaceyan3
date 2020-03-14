@@ -147,8 +147,8 @@ export class MainMenu extends Phaser.Scene {
 		projectile.destroy();
 		this.resetEnemyPosition(enemy);
 		this.score += 10 * enemy.name;
-		const formatedScore = this.zeroPad(this.score, 6);
-		this.scoreLabel.text = `SCORE ${formatedScore}`;
+		// const formatedScore = this.zeroPad(this.score, 6);
+		this.scoreLabel.text = `SCORE ${this.score}`;
 		// this.explosionSound.play();
 	}
 
@@ -163,11 +163,11 @@ export class MainMenu extends Phaser.Scene {
 		}
 	}
 
-	zeroPad(number, size) {
-		let stringNumber = String(number);
-		while (stringNumber.length < (size || 2)) {
-			stringNumber = '0' + stringNumber;
-		}
-		return stringNumber;
-	}
+	// zeroPad(number, size) {
+	// 	let stringNumber = String(number);
+	// 	while (stringNumber.length < (size || 2)) {
+	// 		stringNumber = '0' + stringNumber;
+	// 	}
+	// 	return stringNumber;
+	// }
 }
