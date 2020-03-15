@@ -13,8 +13,8 @@ import { Lvl_1 } from './levels/lvl1';
 export const config = {
 	type: Phaser.AUTO,
 	parent: 'phaser-example',
-	width: 1200,
-	height: 900,
+	width: 900,
+	height: 700,
 	pixelArt: true,
 	physics: {
 		default: 'arcade',

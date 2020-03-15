@@ -3,9 +3,6 @@ export class Preloader extends Phaser.Scene {
 		super('preloader');
 	}
 	preload() {
-		// this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
-		// this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
-		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
 		// console.log("Preloader preload")
 		// let ready = false;
 		// let progressBar = this.add.graphics();

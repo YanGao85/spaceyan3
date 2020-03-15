@@ -29,6 +29,9 @@ export class Boot extends Phaser.Scene {
 			frameWidth: 16,
 			frameHeight: 16
 		});
+		// this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
+		// this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
+		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
 		// this.load.bitmapFont('pixelFont', font);
 	}
 	create() {

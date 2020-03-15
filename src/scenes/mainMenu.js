@@ -57,19 +57,19 @@ export class MainMenu extends Phaser.Scene {
 
 		this.physics.add.overlap(this.projectiles, this.enemies, this.hitEnemy, null, this);
 		// this.music = this.sound.add('music');
-		const musicConfig = {
-			mute: false,
-			volume: 1,
-			rate: 1,
-			detune: 0,
-			seek: 0,
-			loop: false,
-			delay: 0
-		};
+		// const musicConfig = {
+		// 	mute: false,
+		// 	volume: 1,
+		// 	rate: 1,
+		// 	detune: 0,
+		// 	seek: 0,
+		// 	loop: false,
+		// 	delay: 0
+		// };
 		// this.music.play(musicConfig);
 
 		this.score = 0;
-		this.scoreLabel = this.add.text(15, 10, 'SCORE', 48);
+		this.scoreLabel = this.add.text(15, 10, `SCORE`, 68);
 
 		this.enemy1.setInteractive();
 		this.enemy2.setInteractive();
@@ -147,8 +147,9 @@ export class MainMenu extends Phaser.Scene {
 		projectile.destroy();
 		this.resetEnemyPosition(enemy);
 		this.score += 10 * enemy.name;
-		// const formatedScore = this.zeroPad(this.score, 6);
-		this.scoreLabel.text = `SCORE ${this.score}`;
+		const formatedScore = this.zeroPad(this.score, 6);
+		this.scoreLabel.destroy();
+		this.scoreLabel = this.add.text(15, 10, `SCORE ${formatedScore}`, 68);
 		// this.explosionSound.play();
 	}
 
@@ -163,11 +164,11 @@ export class MainMenu extends Phaser.Scene {
 		}
 	}
 
-	// zeroPad(number, size) {
-	// 	let stringNumber = String(number);
-	// 	while (stringNumber.length < (size || 2)) {
-	// 		stringNumber = '0' + stringNumber;
-	// 	}
-	// 	return stringNumber;
-	// }
+	zeroPad(number, size) {
+		let stringNumber = String(number);
+		while (stringNumber.length < (size || 2)) {
+			stringNumber = '0' + stringNumber;
+		}
+		return stringNumber;
+	}
 }
