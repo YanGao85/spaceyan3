@@ -7,6 +7,8 @@ import enemy4 from '../../assets/images/Enemy4.png';
 import hero from '../../assets/images/HeroShip.png';
 import beam from '../../assets/images/Beam.png';
 import explosion from '../../assets/images/explosion.png';
+import beamSound from '../../assets/images/beam.mp3';
+import explosionSound from '../../assets/images/explosion.mp3';
 // import font from '../../assets/fonts/metal.png';
 // import fontxml from '../../assets/fonts/metalFontxml.png';
 export class Boot extends Phaser.Scene {
@@ -29,8 +31,8 @@ export class Boot extends Phaser.Scene {
 			frameWidth: 16,
 			frameHeight: 16
 		});
-		// this.load.audio('audio_beam', [ '../../assets/sounds/beam.ogg' ]);
-		// this.load.audio('audio_explosion', [ '../../assets/sounds/explosion.ogg' ]);
+		this.load.audio('audio_beam', beamSound);
+		this.load.audio('audio_explosion', explosionSound);
 		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
 		// this.load.bitmapFont('pixelFont', font);
 	}

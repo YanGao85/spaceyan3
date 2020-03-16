@@ -76,8 +76,8 @@ export class MainMenu extends Phaser.Scene {
 		this.enemy3.setInteractive();
 		this.enemy4.setInteractive();
 
-		// this.beamSound = this.sound.add('audio_beam');
-		// this.explosionSound = this.sound.add('audio_explosion');
+		this.beamSound = this.sound.add('audio_beam');
+		this.explosionSound = this.sound.add('audio_explosion');
 	}
 
 	moveHeroManager() {
@@ -92,7 +92,7 @@ export class MainMenu extends Phaser.Scene {
 
 	shootBeam() {
 		const beam = new Beam(this);
-		// this.beamSound.play();
+		this.beamSound.play();
 	}
 
 	moveEnemy(enemy, speed) {
@@ -120,7 +120,7 @@ export class MainMenu extends Phaser.Scene {
 			callbackScope: this,
 			loop: false
 		});
-		// this.explosionSound.play();
+		this.explosionSound.play();
 	}
 
 	resetHero() {
@@ -150,7 +150,7 @@ export class MainMenu extends Phaser.Scene {
 		const formatedScore = this.zeroPad(this.score, 6);
 		this.scoreLabel.destroy();
 		this.scoreLabel = this.add.text(15, 10, `SCORE ${formatedScore}`, 68);
-		// this.explosionSound.play();
+		this.explosionSound.play();
 	}
 
 	update() {
