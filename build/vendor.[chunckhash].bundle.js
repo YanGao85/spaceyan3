@@ -4368,4 +4368,4 @@ var n=i(56);t.exports=function(t,e){var i=n(t);for(var s in e)i.hasOwnProperty(s
  * @copyright    2018 Photon Storm Ltd.
  * @license      {@link https://github.com/photonstorm/phaser/blob/master/license.txt|MIT License}
  */
-t.exports={Format:i(1073),Pad:i(143),Reverse:i(1074),UppercaseFirst:i(312)}},function(t,e){t.exports=function(t,e){return t.replace(/%([0-9]+)/g,function(t,i){return e[Number(i)-1]})}},function(t,e){t.exports=function(t){return t.split("").reverse().join("")}},,,,,,,,,,,,,,,,,,function(t,e,i){t.exports=i(211)}]]);
+t.exports={Format:i(1073),Pad:i(143),Reverse:i(1074),UppercaseFirst:i(312)}},function(t,e){t.exports=function(t,e){return t.replace(/%([0-9]+)/g,function(t,i){return e[Number(i)-1]})}},function(t,e){t.exports=function(t){return t.split("").reverse().join("")}},,,,,,,,,,,,,,,,,,,function(t,e,i){t.exports=i(211)}]]);

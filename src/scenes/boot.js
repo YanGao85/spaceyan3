@@ -9,6 +9,7 @@ import beam from '../../assets/images/Beam.png';
 import explosion from '../../assets/images/explosion.png';
 import beamSound from '../../assets/images/beam.mp3';
 import explosionSound from '../../assets/images/explosion.mp3';
+import music from '../../assets/images/open-space.mp3';
 // import font from '../../assets/fonts/metal.png';
 // import fontxml from '../../assets/fonts/metalFontxml.png';
 export class Boot extends Phaser.Scene {
@@ -33,7 +34,7 @@ export class Boot extends Phaser.Scene {
 		});
 		this.load.audio('audio_beam', beamSound);
 		this.load.audio('audio_explosion', explosionSound);
-		// this.load.audio('music', [ '../../assets/sounds/music.ogg' ]);
+		this.load.audio('music', music);
 		// this.load.bitmapFont('pixelFont', font);
 	}
 	create() {

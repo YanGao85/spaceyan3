@@ -56,17 +56,17 @@ export class MainMenu extends Phaser.Scene {
 		this.physics.add.overlap(this.hero, this.enemies, this.hurtHero, null, this);
 
 		this.physics.add.overlap(this.projectiles, this.enemies, this.hitEnemy, null, this);
-		// this.music = this.sound.add('music');
-		// const musicConfig = {
-		// 	mute: false,
-		// 	volume: 1,
-		// 	rate: 1,
-		// 	detune: 0,
-		// 	seek: 0,
-		// 	loop: false,
-		// 	delay: 0
-		// };
-		// this.music.play(musicConfig);
+		this.music = this.sound.add('music');
+		const musicConfig = {
+			mute: false,
+			volume: 1,
+			rate: 1,
+			detune: 0,
+			seek: 0,
+			loop: false,
+			delay: 0
+		};
+		this.music.play(musicConfig);
 
 		this.score = 0;
 		this.scoreLabel = this.add.text(15, 10, `SCORE`, 68);
