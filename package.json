@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/scope2229/Phaser-node-heroku#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "phaser": "^3.11.0"
   },
   "devDependencies": {
